@@ -4,8 +4,8 @@
     "description": "Node.js API for Apna Bazar Seller",
     "main": "server.js",
     "scripts": {
-        "start": "concurrently \"node gateway.js\" \"node shop-service.js\" \"node product-service.js\" \"node order-service.js\" \"node auth-service.js\"",
-        "dev": "concurrently \"node gateway.js\" \"node shop-service.js\" \"node product-service.js\" \"node order-service.js\" \"node auth-service.js\""
+        "start": "node shop-service.js & node product-service.js & node order-service.js & node auth-service.js & node gateway.js",
+        "dev": "node shop-service.js & node product-service.js & node order-service.js & node auth-service.js & node gateway.js"
     },
     "dependencies": {
         "axios": "^1.13.5",
