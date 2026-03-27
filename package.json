@@ -1,0 +1,23 @@
+{
+    "name": "apna-bazar-backend",
+    "version": "1.0.0",
+    "description": "Node.js API for Apna Bazar Seller",
+    "main": "server.js",
+    "scripts": {
+        "start": "concurrently \"node gateway.js\" \"node shop-service.js\" \"node product-service.js\" \"node order-service.js\" \"node auth-service.js\"",
+        "dev": "concurrently \"node gateway.js\" \"node shop-service.js\" \"node product-service.js\" \"node order-service.js\" \"node auth-service.js\""
+    },
+    "dependencies": {
+        "axios": "^1.13.5",
+        "bcryptjs": "^3.0.3",
+        "concurrently": "^9.2.1",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "form-data": "^4.0.5",
+        "jsonwebtoken": "^9.0.3",
+        "multer": "^2.0.2",
+        "mysql2": "^3.20.0",
+        "pg": "^8.11.5"
+    }
+}
